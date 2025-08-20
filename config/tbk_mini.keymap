@@ -13,7 +13,7 @@
 #define RAISE 2
 #define ADJUST 3
 
-{
+/ {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
 
