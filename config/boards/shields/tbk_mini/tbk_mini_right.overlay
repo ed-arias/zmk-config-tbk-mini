@@ -6,7 +6,11 @@
 
 #include "tbk_mini.dtsi"
 
-&kscan0 {
+&default_transform {
+    col-offset = <6>;
+};
+
+&kscan {
     col-gpios
         = <&pro_micro 14 GPIO_ACTIVE_HIGH>
         , <&pro_micro 15 GPIO_ACTIVE_HIGH>
