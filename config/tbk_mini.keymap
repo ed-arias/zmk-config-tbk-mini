@@ -12,31 +12,31 @@
         conditional_layers {
                 compatible = "zmk,conditional-layers";
                 adjust_layer {
-                if-layers = <1 2>;
-                then-layer = <3>;
+                        if-layers = <1 2>;
+                        then-layer = <3>;
                 };
         };
 
         macros {
                 job_user: job_user {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&kp J &kp U &kp A &kp A &kp R &kp I &kp A &kp S>;
-                label = "JOB_USER";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp J &kp U &kp A &kp A &kp R &kp I &kp A &kp S>;
+                        label = "JOB_USER";
                 };
 
                 job_pass: job_pass {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&kp MINUS &kp LS(S) &kp H &kp A &kp K &kp I &kp R &kp A &kp N0 &kp N9 &kp N8 &kp N7 &kp DOT>;
-                label = "JOB_PASS";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp MINUS &kp LS(S) &kp H &kp A &kp K &kp I &kp R &kp A &kp N0 &kp N9 &kp N8 &kp N7 &kp DOT>;
+                        label = "JOB_PASS";
                 };
 
                 job_email: job_email {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&kp J &kp U &kp A &kp N &kp DOT &kp J &kp A &kp R &kp I &kp A &kp S &kp AT &kp M &kp E &kp R &kp C &kp A &kp D &kp O &kp L &kp I &kp B &kp R &kp E &kp DOT &kp C &kp O &kp M &kp DOT &kp C &kp O>;
-                label = "JOB_EMAIL";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp J &kp U &kp A &kp N &kp DOT &kp J &kp A &kp R &kp I &kp A &kp S &kp AT &kp M &kp E &kp R &kp C &kp A &kp D &kp O &kp L &kp I &kp B &kp R &kp E &kp DOT &kp C &kp O &kp M &kp DOT &kp C &kp O>;
+                        label = "JOB_EMAIL";
                 };
         };
 
