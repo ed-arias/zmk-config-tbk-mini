@@ -8,6 +8,11 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+
+#define LEFT_HAND_KEYS  0 1 2 3 4 5  12 13 14 15 16 17  24 25 26 27 28 29  36 37 38
+#define RIGHT_HAND_KEYS 6 7 8 9 10 11   18 19 20 21 22 23  30 31 32 33 34 35  39 40 41
+
+
 #define BASE 0
 #define NAV 1
 #define MED 2
@@ -48,6 +53,32 @@
                 };
         };
 
+        behaviors {
+                hrmL: homerow_mod_left {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HRM_LEFT";
+                        #binding-cells = <2>;
+                        flavor = "balanced";
+                        tapping-term-ms = <200>;
+                        require-prior-idle-ms = <150>;
+                        hold-trigger-on-release;
+                        hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
+                        bindings = <&kp>, <&kp>;
+                };
+
+                hrmR: homerow_mod_right {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HRM_RIGHT";
+                        #binding-cells = <2>;
+                        flavor = "balanced";
+                        tapping-term-ms = <200>;
+                        require-prior-idle-ms = <150>;
+                        hold-trigger-on-release;
+                        hold-trigger-key-positions = <LEFT_HAND_KEYS>;
+                        bindings = <&kp>, <&kp>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -55,7 +86,7 @@
                         display-name = "Base";
                         bindings = <
                                 &kp TAB         &kp Q           &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P           &kp BSPC
-                                &kp LCTRL       &mt LGUI A      &mt LALT S      &mt LCTRL D     &mt LSHFT F     &kp G                   &kp H           &mt RSHFT J     &mt RCTRL K     &mt RALT L      &mt RGUI SEMI   &kp SQT
+                                &kp LCTRL       &hrmL LGUI A    &hrmL LALT S    &hrmL LCTRL D   &hrmL LSHFT F   &kp G                   &kp H           &hrmR RSHFT J   &hrmR RCTRL K   &hrmR RALT L    &hrmR RGUI SEMI &kp SQT
                                 &kp LSHFT       &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH        &kp ESC
                                                                                 &lt NUM ESC     &lt NAV RET     &lt MED TAB             &lt ADJ DEL     &lt SYM SPACE   &lt FUN BSPC
                         >;
