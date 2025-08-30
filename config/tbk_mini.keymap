@@ -133,10 +133,10 @@
                 symbols_layer {
                         display-name = "Symbols";
                         bindings = <
-                                &trans          &trans          &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &trans          &trans
-                                &trans          &trans          &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &trans          &trans
-                                &trans          &trans          &trans          &trans          &trans          &trans                  &trans          &trans          &trans          &trans          &trans          &trans
-                                                                                &trans          &trans          &trans                  &trans          &trans          &trans
+                                &trans          &kp EXCL        &kp AT          &kp HASH        &kp LPAR        &kp RPAR                &trans          &trans          &trans          &trans          &trans          &trans
+                                &trans          &kp DOLLAR      &kp PERCENT     &kp CARET       &kp LBKT        &kp RBKT                &trans          &trans          &trans          &trans          &trans          &trans
+                                &trans          &kp AMPS        &kp ASTRK       &kp SQT         &kp EQUAL       &kp MINUS               &trans          &trans          &trans          &trans          &trans          &trans
+                                                                                &kp BSLH        &kp GRAVE       &trans                  &trans          &trans          &trans
                         >;
                 };
 
