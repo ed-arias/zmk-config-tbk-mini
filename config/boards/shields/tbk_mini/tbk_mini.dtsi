@@ -42,7 +42,4 @@
             ;
 
     };
-
-    // TODO: per-key RGB node(s)?
-
 };
