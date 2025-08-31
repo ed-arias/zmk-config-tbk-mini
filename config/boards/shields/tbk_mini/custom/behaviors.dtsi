@@ -13,7 +13,7 @@
     behaviors {
         hrm_l: homerow_mod_left {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_L";
+            display-name = "HRM_L";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
@@ -25,7 +25,7 @@
 
         hrm_r: homerow_mod_right {
             compatible = "zmk,behavior-hold-tap";
-            label = "HRM_R";
+            display-name = "HRM_R";
             #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
@@ -34,5 +34,7 @@
             hold-trigger-key-positions = <LEFT_HAND_KEYS>;
             hold-trigger-on-release;
         };
+
+        //add your custom behaviors here
     };
 };
