@@ -35,6 +35,15 @@
             hold-trigger-on-release;
         };
 
+        qtlt: quick-tap-layer-tap {
+            compatible = "zmk,behavior-hold-tap";
+            display-name = "Quick tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            quick-tap-ms = <150>;
+            bindings = <&kp>, <&kp>;
+        };
+
         //add your custom behaviors here
     };
 };
