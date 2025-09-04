@@ -31,64 +31,51 @@
 
         macros {
                 mcr_juser: mcr_juser {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&kp J &kp U &kp A &kp A &kp R &kp I &kp A &kp S>;
-                label = "MCR_JUSER";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp J &kp U &kp A &kp A &kp R &kp I &kp A &kp S>;
+                        label = "MCR_JUSER";
                 };
 
                 mcr_jpass: mcr_jpass {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&kp MINUS &kp LS(S) &kp H &kp A &kp K &kp I &kp R &kp A &kp N0 &kp N9 &kp N8 &kp N7 &kp DOT>;
-                label = "MCR_JPASS";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp MINUS &kp LS(S) &kp H &kp A &kp K &kp I &kp R &kp A &kp N0 &kp N9 &kp N8 &kp N7 &kp DOT>;
+                        label = "MCR_JPASS";
                 };
 
                 mcr_jemail: mcr_jemail {
-                compatible = "zmk,behavior-macro";
-                #binding-cells = <0>;
-                bindings = <&kp J &kp U &kp A &kp N &kp DOT &kp J &kp A &kp R &kp I &kp A &kp S &kp AT &kp M &kp E &kp R &kp C &kp A &kp D &kp O &kp L &kp I &kp B &kp R &kp E &kp DOT &kp C &kp O &kp M &kp DOT &kp C &kp O>;
-                label = "MCR_JEMAIL";
+                        compatible = "zmk,behavior-macro";
+                        #binding-cells = <0>;
+                        bindings = <&kp J &kp U &kp A &kp N &kp DOT &kp J &kp A &kp R &kp I &kp A &kp S &kp AT &kp M &kp E &kp R &kp C &kp A &kp D &kp O &kp L &kp I &kp B &kp R &kp E &kp DOT &kp C &kp O &kp M &kp DOT &kp C &kp O>;
+                        label = "MCR_JEMAIL";
                 };
-
-                //add your custom macros here
         };
 
         behaviors {
                 hrm_l: homerow_mod_left {
-                compatible = "zmk,behavior-hold-tap";
-                display-name = "HRM_L";
-                #binding-cells = <2>;
-                flavor = "tap-preferred";
-                tapping-term-ms = <250>;
-                require-prior-idle-ms = <200>;
-                bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
-                hold-trigger-on-release;
+                        compatible = "zmk,behavior-hold-tap";
+                        display-name = "HRM_L";
+                        #binding-cells = <2>;
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <250>;
+                        require-prior-idle-ms = <200>;
+                        bindings = <&kp>, <&kp>;
+                        hold-trigger-key-positions = <RIGHT_HAND_KEYS>;
+                        hold-trigger-on-release;
                 };
 
                 hrm_r: homerow_mod_right {
-                compatible = "zmk,behavior-hold-tap";
-                display-name = "HRM_R";
-                #binding-cells = <2>;
-                flavor = "tap-preferred";
-                tapping-term-ms = <250>;
-                require-prior-idle-ms = <200>;
-                bindings = <&kp>, <&kp>;
-                hold-trigger-key-positions = <LEFT_HAND_KEYS>;
-                hold-trigger-on-release;
+                        compatible = "zmk,behavior-hold-tap";
+                        display-name = "HRM_R";
+                        #binding-cells = <2>;
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <250>;
+                        require-prior-idle-ms = <200>;
+                        bindings = <&kp>, <&kp>;
+                        hold-trigger-key-positions = <LEFT_HAND_KEYS>;
+                        hold-trigger-on-release;
                 };
-
-                qtlt: quick-tap-layer-tap {
-                compatible = "zmk,behavior-hold-tap";
-                display-name = "Quick tap";
-                #binding-cells = <2>;
-                flavor = "tap-preferred";
-                quick-tap-ms = <150>;
-                bindings = <&kp>, <&kp>;
-                };
-
-                //add your custom behaviors here
         };
 
         keymap {
@@ -184,4 +171,8 @@
                 //        >;
                 //};
         };
+};
+
+&led_strip {
+    chain-length = <21>;
 };
