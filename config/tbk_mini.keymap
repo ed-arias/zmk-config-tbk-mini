@@ -14,6 +14,10 @@
 #define HRM_QUICK_TAP 175
 #define HRM_PRIOR_IDLE 150
 
+/* Global parameters for Thumbs */
+#define THUMB_TERM 200
+#define THUMB_QUICK_TAP 200
+
 #define LEFT_HAND_KEYS 0 1 2 3 4 5 12 13 14 15 16 17 24 25 26 27 28 29 36 37 38
 #define RIGHT_HAND_KEYS 6 7 8 9 10 11 18 19 20 21 22 23 30 31 32 33 34 35 39 40 41
 
@@ -91,9 +95,9 @@
                         compatible = "zmk,behavior-hold-tap";
                         display-name = "LT_HP";
                         #binding-cells = <2>;
-                        flavor = "balanced";
-                        tapping-term-ms = <HRM_TERM>;
-                        quick-tap-ms = <HRM_QUICK_TAP>;
+                        flavor = "tap-preferred";
+                        tapping-term-ms = <THUMB_TERM>;
+                        quick-tap-ms = <THUMB_QUICK_TAP>;
                         bindings = <&mo>, <&kp>;
                 };
         };
