@@ -1,5 +1,0 @@
-zephyr:
-  build:
-    settings:
-      board_root: config
-      shield_root: config
