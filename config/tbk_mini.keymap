@@ -109,7 +109,7 @@
                         display-name = "Base";
                         bindings = <
                                 &trans          &kp Q           &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P                   &trans
-                                &trans          &hrm_l LGUI A   &hrm_l LALT S   &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G                   &kp H           &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L   &hrm_r RGUI SEMI        &trans
+                                &trans          &hrm_l LCTRL A  &hrm_l LALT S   &hrm_l LGUI D   &hrm_l LSHFT F  &kp G                   &kp H           &hrm_r RSHFT J  &hrm_r RGUI K  &hrm_r RALT L   &hrm_r RCTRL SEMI        &trans
                                 &trans          &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH                &trans
                                                                                 &lt_hp NUM ESC  &lt_hp NAV RET  &lt_hp MED TAB          &lt_hp MSE DEL  &lt_hp SYM SPACE &lt_hp FUN BSPC
                         >;
@@ -119,7 +119,7 @@
                         display-name = "Mac";
                         bindings = <
                                 &trans          &kp Q           &kp W           &kp E           &kp R           &kp T                   &kp Y           &kp U           &kp I           &kp O           &kp P                   &trans
-                                &trans          &hrm_l LALT A   &hrm_l LGUI S   &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G                   &kp H           &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RGUI L   &hrm_r RALT SEMI        &trans
+                                &trans          &hrm_l LGUI A   &hrm_l LALT S   &hrm_l LCTRL D  &hrm_l LSHFT F  &kp G                   &kp H           &hrm_r RSHFT J  &hrm_r RCTRL K  &hrm_r RALT L   &hrm_r RGUI SEMI        &trans
                                 &trans          &kp Z           &kp X           &kp C           &kp V           &kp B                   &kp N           &kp M           &kp COMMA       &kp DOT         &kp FSLH                &trans
                                                                                 &lt_hp NUM ESC  &lt_hp NAV RET  &lt_hp MED TAB          &lt_hp MSE DEL  &lt_hp SYM SPACE &lt_hp FUN BSPC
                         >;
